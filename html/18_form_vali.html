@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- what form ? 
+    inline 
+    -->
+
+    <!-- normal html tag -->
+
+    <!-- new pattern [a-zA-Z0-9] -->
+
+    <table border="5" align="center">
+        <caption>Form data</caption>
+        <form action="">
+            <tr>
+                <td><label for="">Enter your Name</label></td>
+                <!-- <td> <input type="text" placeholder="Enter your name" pattern="[a-zA-Z]+" title="Name" value="" required></td> -->
+                 <td> <input type="text" placeholder="Enter your name" pattern="[a-zA-Z]{3,8}" title="Name" value="" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Surname</label></td>
+                <td> <input type="text" placeholder="Enter your surname" pattern="[a-zA-Z]{3,8}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Email</label></td>
+                <td><input type="email" placeholder="@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td> <label for="">Enter your number</label></td>
+                <!-- <td><input type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your number" required></td> -->
+                      <td><input type="tel" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="Enter your number" required></td>
+            </tr>
+               <tr>
+                <td>  <label for="">Enter your password</label></td>
+                <td> <input type="password" placeholder="Enter your password" required></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"> <input type="submit"></td>
+            </tr>
+        </form>
+    </table>
+
+  
+
+</body>
+
+</html>
