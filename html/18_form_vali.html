@@ -29,6 +29,9 @@
                 <td> <input type="text" placeholder="Enter your surname" pattern="[a-zA-Z]{3,8}" required></td>
             </tr>
             <tr>
+                <!-- shubhamjadav.tops@gmail.com 
+                    [a-z0-9]@+[a-z].+[a-z]{2,3}$
+                -->
                 <td><label for="">Enter your Email</label></td>
                 <td><input type="email" placeholder="@gmail.com" required></td>
             </tr>
@@ -39,7 +42,11 @@
             </tr>
                <tr>
                 <td>  <label for="">Enter your password</label></td>
-                <td> <input type="password" placeholder="Enter your password" required></td>
+                <td> <input type="password" pattern="[A-Z]+[a-zA-Z]+[a-zA-Z-0-9]{8,12}" placeholder="Enter your password" required></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="number" max="5" min="1"></td>
             </tr>
             <tr>
                 <td align="center" colspan="2"> <input type="submit"></td>
